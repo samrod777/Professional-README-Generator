@@ -37,23 +37,23 @@ const questions = () =>
 
         switch (answers.license) {
             case "MIT":
-                var mdlicense = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+                var mdLicImg = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
                 break;
             case "Apache":
-                var mdlicense = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+                var mdLicImg = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
                 break;
             case "WTFPL":
-                var mdlicense = "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)";
+                var mdLicImg = "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)";
                 break;
             default:
-                var mdlicense = "";
+                var mdLicImg = "";
                 break
         }
     
         const markdownString = `# ${answers.title}
 
         ![screenshot]()
-        ${mdlicense}  
+        ${mdLicImg}  
 
 
         ---
