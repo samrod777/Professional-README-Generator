@@ -91,5 +91,5 @@ const questions = () =>
         })
     })
 
-    // unction call to initialize program
+    // function call to initialize program
     questions();
