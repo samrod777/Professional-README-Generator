@@ -18,7 +18,7 @@ const questions = () =>
       {
         type: "list",
         name: "license",
-        message: "What kind of license should your project have?",
+        message: "What kind of license should your project use?",
         choices: ["MIT", "Apache", "GPL", "WTFPL"],
       },
       {
@@ -41,20 +41,20 @@ const questions = () =>
           var mdLicImg =
             "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
           break;
-        case "Apache":
-          var mdLicImg =
-            "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
-          break;
         case "WTFPL":
           var mdLicImg =
             "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)";
+          break;
+        case "Apache":
+          var mdLicImg =
+            "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
           break;
         default:
           var mdLicImg = "";
           break;
       }
 
-    const markdownString = `# ${answers.title}  
+      const markdownString = `# ${answers.title}  
 ${mdLicImg}   
 
 
@@ -75,18 +75,18 @@ ${answers.description}
 To get started, follow the Installation instructions.  
 
 ### Installation  
-Run the following command in your terminal  
+Run the following command in your terminal to install required dependencies:  
 ${answers.dependencies}
 
 ## Testing
-Run the following command in your terminal  
+If there is a test, run the following command in your terminal:  
 ${answers.test}
 
 ## Contributing
-${answers.contribute}
+To contribute to this project contact the owner.
 
 ## License
-This application is covered under the ${answers.license} license;
+This application is covered under the ${answers.license} license.
 `;
       fs.writeFile("README.md", markdownString, (err) => {
         if (err) console.log(err);

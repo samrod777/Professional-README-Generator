@@ -1,4 +1,4 @@
-# generator  
+# Professional README Generator  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)   
 
 
@@ -13,21 +13,21 @@
 - [License](#License) 
 
 ## About the Project
-cool app
+This app allows the user to create a README file by populating parts of the file with answers given by the user.
 
 ## Getting Started  
 To get started, follow the Installation instructions.  
 
 ### Installation  
-Run the following command in your terminal  
+Run the following command in your terminal to install required dependencies:  
 npm i
 
 ## Testing
-Run the following command in your terminal  
+If there is a test, run the following command in your terminal:  
 npm test
 
 ## Contributing
-undefined
+To contribute to this project contact the owner.
 
 ## License
-This application is covered under the MIT license;
+This application is covered under the MIT license.
