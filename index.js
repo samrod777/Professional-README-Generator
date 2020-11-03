@@ -54,7 +54,8 @@ const questions = () =>
           break;
       }
 
-      const markdownString = `# ${answers.title}  
+      const markdown = `# ${answers.title} 
+
 ${mdLicImg}   
 
 
@@ -88,7 +89,7 @@ To contribute to this project contact the owner.
 ## License
 This application is covered under the ${answers.license} license.
 `;
-      fs.writeFile("README.md", markdownString, (err) => {
+      fs.writeFile("README.md", markdown, (err) => {
         if (err) console.log(err);
       });
     });

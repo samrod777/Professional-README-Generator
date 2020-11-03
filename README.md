@@ -1,5 +1,7 @@
-# Professional README Generator  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)   
+# Professional README Generator 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
+  
+![README Genarator Picture](./utils/readmegenerator.png)
 
 
 ---
@@ -27,7 +29,8 @@ If there is a test, run the following command in your terminal:
 npm test
 
 ## Contributing
-To contribute to this project contact the owner.
+To contribute to this project contact the owner.  
+Github Repository URL: https://github.com/samrod777/Professional-README-Generator  
 
 ## License
 This application is covered under the MIT license.
